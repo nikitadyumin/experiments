@@ -1,6 +1,6 @@
 $(function () {
     const createValidators = (validators, bus)=> {
-        const props = Array.from(validators).map(([validatorFunc, fieldSelector]) => {
+        const props = Array.from(validators).map(([fieldSelector,validatorFunc]) => {
             const prop = Bacon.$.textFieldValue($(fieldSelector)).map(validatorFunc);
             bus.plug(prop.map(value => {
                 return {message: fieldSelector, value: value}
@@ -11,7 +11,9 @@ $(function () {
     };
 
     const validators = new Map();
-    validators.set('#name input', x => x.length > 0);
+    validators.set('#name input', x => {
+        return x.length > 0
+    });
     validators.set('#age input', x => x.length > 0);
     const bus = new Bacon.Bus();
 
