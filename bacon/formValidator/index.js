@@ -28,12 +28,12 @@ $(function () {
             return message.message == type;
         })
     };
-    bus.ofType('#name input')
-        .merge(bus.ofType('#age input'))
-        .onValue(function(value){
-            $('#fields')
-                .append(value.message + '=' + value.value + '<br/>');
-        });
+    // bus.ofType('#name input')
+    //     .merge(bus.ofType('#age input'))
+    //     .onValue(function(value){
+    //         $('#fields')
+    //             .append(value.message + '=' + value.value + '<br/>');
+    //     });
 
     bus.ofType('#submitButton').onValue(function(value){
         $('#validations').append(value.value + '<br/>')
