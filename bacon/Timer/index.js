@@ -9,5 +9,5 @@ $(function () {
     });
     timer.take(5).onValue((value) => {
         $("#events").append($("<li>").text(value))
-    })
+    });
 });
