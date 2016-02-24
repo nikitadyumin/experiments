@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form validator</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/baconjs/dist/Bacon.js"></script>
+    <script src="../node_modules/bacon.jquery/dist/bacon.jquery.js"></script>
+    <script src="../node_modules/bacon.model/dist/bacon.model.js"></script>
+    <script src="../node_modules/hammerjs/hammer.js"></script>
+
+    <script src="index.js"></script>
+    <style>
+        #hammer {
+            margin: 50px;
+            width: 150px;
+            height: 150px;
+            background: green;
+            font-family: arial,serif;
+            color: white;
+            padding-top: 110px;
+            text-align: center;
+            transition: background 1s;
+        }
+        #hammer.tapped {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+<div id="hammer">
+    touch this
+</div>
+</body>
+</html>
