@@ -1,0 +1,24 @@
+{
+  "name": "experiments",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lqip32/experiments.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lqip32/experiments/issues"
+  },
+  "homepage": "https://github.com/lqip32/experiments#readme",
+  "dependencies": {
+    "bacon.jquery": "^0.4.12",
+    "bacon.model": "^0.1.12",
+    "baconjs": "^0.7.83",
+    "jquery": "^2.2.1"
+  }
+}
