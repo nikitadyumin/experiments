@@ -1,8 +1,15 @@
+import $ from 'jquery';
+import Bacon from 'baconjs';
+import bj from 'bacon.jquery';
+import bm from 'bacon.model';
+import html from 'baconEx/formValidator/index.tpl!'
+render(html);
+
 $(function () {
     const createValidators = validations =>
         Bacon.combineWith((...props) => props.every(x => x === true),
             Array.from(validations).map(([fieldSelector,validators]) =>
-                Bacon.$.textFieldValue($(fieldSelector)).map(val => validators.every(fn => fn(val) === true))
+                bm.$.textFieldValue($(fieldSelector)).map(val => validators.every(fn => fn(val) === true))
             ));
 
     const validators = new Map();

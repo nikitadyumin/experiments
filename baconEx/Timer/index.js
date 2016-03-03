@@ -1,3 +1,8 @@
+import $ from 'jquery';
+import Bacon from 'baconjs';
+import bj from 'bacon.jquery';
+import html from 'baconEx/Timer/index.tpl!';
+render(html);
 $(function () {
     const timer = Bacon.fromBinder(sink => {
         const id = setInterval(()=> {
