@@ -1,9 +1,11 @@
+/* @flow */
+
 import $ from 'jquery';
 import Bacon from 'baconjs';
 import bj from 'bacon.jquery';
 import bm from 'bacon.model';
 import html from 'baconEx/formValidator/index.tpl!'
-render(html);
+window.render(html);
 
 $(function () {
     const createValidators = validations =>
