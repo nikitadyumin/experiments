@@ -1,9 +1,10 @@
+import ReactDOM from 'react-dom';
 import React from 'react';
 
-let HelloMessage = React.createClass({
-    render: function() {
+let HelloMessage = class extends React.Component {
+    render() {
         return <div>Hello {this.props.name}!</div>;
     }
-});
+};
 
-React.render(<HelloMessage name='World' />, document.getElementById('playground'));
+ReactDOM.render(<HelloMessage name='World'/>, document.getElementById('playground'));
