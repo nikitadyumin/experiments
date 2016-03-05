@@ -2,6 +2,8 @@ import $ from 'jquery';
 import Bacon from 'baconjs';
 import bj from 'bacon.jquery';
 import html from 'baconEx/keyTest/index.tpl!';
+import render from '../../playground/render';
+
 render(html);
 $(() => {
     const key = $(document).asEventStream('keydown');

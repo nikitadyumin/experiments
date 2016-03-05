@@ -23,6 +23,10 @@
     "map": {
       "./tpl": "./loaders/html",
       "bacon": "./node_modules/baconjs/dist/Bacon"
+    },
+    "transpiler": "babel",
+    "babelOptions": {
+      "blacklist": []
     }
   },
   "dependencies": {
@@ -32,9 +36,11 @@
     "hammerjs": "^2.0.6",
     "jquery": "^2.2.1",
     "qs": "^6.1.0",
+    "react": "^0.14.7",
     "steal": "^0.14.1"
   },
   "devDependencies": {
+    "babel-preset-react": "^6.5.0",
     "http-server": "^0.9.0"
   }
 }

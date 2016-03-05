@@ -2,6 +2,8 @@ import $ from 'jquery';
 import Bacon from 'baconjs';
 import bj from 'bacon.jquery';
 import html from 'baconEx/Timer/index.tpl!';
+import render from '../../playground/render';
+
 render(html);
 $(function () {
     const timer = Bacon.fromBinder(sink => {
