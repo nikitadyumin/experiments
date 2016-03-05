@@ -4,8 +4,10 @@ import $ from 'jquery';
 import Bacon from 'baconjs';
 import bj from 'bacon.jquery';
 import bm from 'bacon.model';
+// $FlowFixMe: >_<
 import html from 'baconEx/formValidator/index.tpl!'
-window.render(html);
+import render from '../../playground/render';
+render(html);
 
 $(function () {
     const createValidators = validations =>
