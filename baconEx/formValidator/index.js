@@ -5,7 +5,7 @@ import Bacon from 'baconjs';
 import bj from 'bacon.jquery';
 import bm from 'bacon.model';
 // $FlowFixMe: >_<
-import html from 'baconEx/formValidator/index.tpl!'
+import html from './index.tpl!'
 import render from '../../playground/render';
 render(html);
 
